@@ -17,7 +17,7 @@ Pour donner plusieurs arguments il faudrait les séparer par une virgule (",").
 
     print("Hello", "World") --> Hello	World
 
-L'espace après la virgule n'est pas necessaire.
+**NOTE:** L'espace après la virgule n'est pas necessaire.
 
 Dans un code en Lua qui contient plusieurs "_instructions_", chaque instruction peut être écrite avec ou sans point-virgule à la fin et soit sur une ligne séparée soit sur une autre ligne avec une autre instruction (une ligne peut contenir n'importe quel nombre d'instructions), par exemple, les codes suivants sont équivalents.
 
@@ -33,20 +33,18 @@ Dans un code en Lua qui contient plusieurs "_instructions_", chaque instruction 
 
 Même si la dernière façon est considérée "sale" par certaines personnes.
 
-L'espace entre les deux `print` des deux derniers exemples n'est pas necessaire parce qu'ils se terminent tout les deux par un caractère spécial (ici ")" et ";").
+**NOTE:** L'espace entre les deux `print` des deux derniers exemples n'est pas necessaire parce qu'ils se terminent tout les deux par un caractère spécial (ici ")" et ";").
 
 ## Les commentaires
 
 Les commentaires sont des morceaux de textes qui ne sont pas executés, en Lua les commentaires commencent par `--` (deux tirets).
 Ils sont souvent utilisés pour expliquer un bout de code sans avoir à le relire (surtout si il est compliqué).
-Par exemple
 
     print("Hello World!") --affiche Hello World!
 
 fonctionne de la même façon que la dernière fois même avec le commentaire.
 Ce n'est peut-être pas necessaire de mettre des commentaires sur chaque ligne, surtout quand on est habitué à print, mais c'était pour l'exemple.
 Il existe aussi des commentaires "_multilignes_" qui commencent par `--[[` et se terminent par `--]]`.
-Par exemple
 
     print("Hello World!")
     --[[
@@ -55,10 +53,9 @@ Par exemple
     --]]
 
 On peut aussi ajouter un tiret au premier pour décommenter toute la partie qu'il commente, c'est utile pour remettre un code qu'on avait commenté.
-Par exemple
 
     ---[[
     print("Cette partie n'est pas commentée !")
     --]]
 
-Dans ce code les parties `---[[` et `--]]` ne font pas planter parce qu'elles sont commentées par les deux tirets.
+**NOTE:** Dans ce code les parties `---[[` et `--]]` ne font pas planter parce qu'elles sont commentées par les deux tirets.
