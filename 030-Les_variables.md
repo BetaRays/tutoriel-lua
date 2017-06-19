@@ -473,7 +473,7 @@ Les opérateurs relationnels comparent deux valeurs.
     print("texte"==nil) --> false
     print(5==5.684) --> false
 
-`~=` est la négation de `==`, donc `a~=b` est équivalent à `not a==b`.
+`~=` est la négation de `==`, donc `a~=b` est équivalent à `not (a==b)` (parce que not est plus important que ==, voir précédence des opérateurs).
 
 `<`, `>`, `<=` et `>=` vérifient si la première valeur est inférieure, supérieure, inférieure ou égale et supérieure ou égale à la deuxième respectivement, ils peuvent être utilisés sur des nombres ou pour comparer du texte par ordre alphabethique.
 
