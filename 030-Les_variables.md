@@ -363,8 +363,10 @@ On peut aussi utiliser dans le cas de la bibliothèque string une autre syntaxe.
     print(s:upper()) --> ABCD
     print(s) --> AbCd
 
+    print(("t"):byte()) --> 116
+
 Dans ce cas on utilise upper en tant que "_méthode_" sur s.
-Utiliser les fonctions de la bibliothèque string en tant que méthodes ne fonctionnera que sur des variables contenant du texte.
+Utiliser les fonctions de la bibliothèque string en tant que méthodes ne fonctionnera que sur des variables contenant du texte ou du texte mis entre parenthèses (ça plante sans).
 
 Si vous utilisez des lettres hors de la table ACSII (des caractères qui n'éxistent pas en anglais, comme 'é' ou 'ç'), la plupart fonctions de la bibliothèque string fonctionneront toujours (comme `string.rep`), mais pour les autres vous pouvez utiliser la biliothèque utf8.
 
