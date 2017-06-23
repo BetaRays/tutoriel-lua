@@ -465,6 +465,8 @@ Même si ce n'est pas necessaire de se souvenir de la façon exacte dont `and` e
     print(not not nil) --> false
     print(not not "texte") --> true
 
+**NOTE:** On peut utiliser `not not` pour transformer une valeur en booléen (par rapport à ce qu'elle "vaut"), mais c'est rarement utile car la plupart du temps les valeurs peuvent être utilisées comme un booléen sans conversion.
+
 ##### Les opérateurs de comparaison
 
 Les opérateurs relationnels comparent deux valeurs.
