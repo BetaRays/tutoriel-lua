@@ -366,7 +366,7 @@ On peut aussi utiliser dans le cas de la bibliothèque string une autre syntaxe.
     print(("t"):byte()) --> 116
 
 Dans ce cas on utilise upper en tant que "_méthode_" sur s.
-Utiliser les fonctions de la bibliothèque string en tant que méthodes ne fonctionnera que sur des variables contenant du texte ou du texte mis entre parenthèses (ça plante sans).
+Utiliser les fonctions de la bibliothèque string en tant que méthodes ne fonctionnera que sur des variables contenant du texte ou du texte mis entre parenthèses (Lua plante sans elles).
 
 Si vous utilisez des lettres hors de la table ACSII (des caractères qui n'éxistent pas en anglais, comme 'é' ou 'ç'), la plupart fonctions de la bibliothèque string fonctionneront toujours (comme `string.rep`), mais pour les autres vous pouvez utiliser la biliothèque utf8.
 
@@ -900,7 +900,7 @@ On peut acceder aux _varargs_ avec `...`, on peut imaginer que chaque `...` qu'o
       end
     end
 
-**NOTE:** On aurait pu simplifier en utilisant `ipairs{...}` au lieu de `ipairs({...})`, mais il n'y a aucune différence de fonctionnement du code entre les deux.
+**NOTE:** On aurait pu simplifier en utilisant `ipairs{...}` au lieu de `ipairs({...})` puisqu'il n'y a aucune différence de fonctionnement du code entre les deux.
 
 Le problème avec cette approche est que si les arguments contiennent des _nils_ alors `ipairs` s'arrêtera au premier _nil_, une autre solution est d'utiliser `table.pack` qui est équivalent mais rajoute aussi une valeur associée à la clé "n" contenant le nombre d'arguments que `table.pack` a reçu.
 C'est la façon la plus simple et la plus rapide de le faire.
