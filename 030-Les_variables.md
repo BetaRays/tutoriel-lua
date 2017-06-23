@@ -695,7 +695,7 @@ Dans ce cas il y a aussi un équivalent en boucle _for_ génériques.
 `ipairs` est un itérateur, j'en parlerais plus tard.
 Il y a aussi un intérateur `pairs` qui fonctionne de la même façon mais avec tout type de clés.
 
-**NOTE:** Quand on utilise `pairs` ou `ipairs` de cette façon, on "_itère_" sur un tableau.
+**NOTE:** Quand on utilise `pairs` ou `ipairs` de cette façon, on "_itère_" sur une table (ou un tableau dans le cas de `ipairs`).
 
 #### La bibliothèque table
 
