@@ -785,7 +785,7 @@ On pouvais aussi utiliser l'équivalent avec la fonction `assert` qui appelle er
       --faire des choses avec le nombre
     end
 
-**NOTE:** On peut aussi pointer l'erreur quelque part avec un autre argument à `error`, c'est plutot bien expliqué sur [le manuel de Lua](https://www.lua.org/manual/5.3/manual.html#pdf-error).
+**NOTE:** On peut aussi pointer l'erreur quelque part avec un autre argument à `error`, c'est plutot bien expliqué sur [le manuel de Lua](https://www.lua.org/manual/5.3/manual.html#pdf-error), `assert` ne permet pas encore de le faire.
 
 Pour appeller une fonction on peut utiliser le nom de la fonction avec les arguments entre parenthèses ou des parenthèses vides si il n'y en a pas.
 
