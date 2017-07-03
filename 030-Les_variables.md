@@ -546,6 +546,21 @@ Les blocs _while_ (aussi appelés boucles _while_) fonctionnent de la même faç
 
 **NOTE:** On aurait pu utiliser `string.lower` sur la réponse pour que le code fonctionne quand quelqu'un ajoute une majuscule au début (ou n'importe où).
 
+#### Les blocs _repeat-until_
+
+Si on voulait faire une ligne de commande interactive (un peu comme celui de lua), on aurait pu utiliser _repeat-until_.
+Avec _repeat-until_ ("répète jusqu'à" traduit en français, ou "répète jusqu'à ce que" pour être plus compréhensible), la condition est évaluée à la fin et le code à l'intérieur est donc executé au moins une fois, c'est donc très utile dans certaines situations (comme un programme interactif).
+
+    repeat
+      io.write("Entrez un nombre: ")
+      v=io.read()
+    until tonumber(v)~=nil
+    --faire quelque chose avec le nombre
+
+**NOTE:** le `~=nil` est totalement optionnel car le `nil` vaut faux.
+
+Dans un vrai programme totalement interactif on aurait certainement une structure différente, mais pour demander quelques valeurs au début du programme, ou pour demander si il doit redémarrer, c'est utile.
+
 ### Les _tables_
 
 La définition correcte d'une _table_ serait de dire que c'est un tableau associatif avec n'importe quelle valeur, c'est à dire qu'on peut associer une valeur à une clé qui permettra de la récuperer plus tard.
