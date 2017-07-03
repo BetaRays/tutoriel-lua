@@ -697,6 +697,26 @@ Il y a aussi un intérateur `pairs` qui fonctionne de la même façon mais avec 
 
 **NOTE:** Quand on utilise `pairs` ou `ipairs` de cette façon, on "_itère_" sur une table (ou un tableau dans le cas de `ipairs`).
 
+#### Les ensembles
+
+Un ensemble (_set_ en anglais) en Lua est surtout une utilisation particulière des _tables_, comme pour les tableaux.
+
+Dans un ensemble, les valeurs attachées aux clés sont toujours `true`, et on utilise seulement les valeurs pour naviguer dedans (avec `pairs`).
+
+    set = {
+      chien = true
+      chat = true
+      cheval = true
+    }
+    
+    for v in pairs(set) do
+      print(v)
+    end
+
+Ce code affichera "chien", "chat" et "cheval" mais dans un ordre indéfini.
+
+**NOTE:** D'habitude on utilise deux valeurs pour `pairs` (un pour la clé et l'autre pour la valeur), mais ici les valeurs ne nous intéressent pas, on cherche uniquement à récuperer la clé, donc j'ai omis la deuxième variable.
+
 #### La bibliothèque table
 
 La bibliothèque table est surtout utilisée pour les _tables_ utilisées en tant que tableaux, même si elle s'appelle table et pas array ou list.
