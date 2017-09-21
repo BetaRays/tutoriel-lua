@@ -781,7 +781,7 @@ La bibliothèque table est surtout utilisée pour les _tables_ utilisées en tan
 `table.concat` ne modifie pas la _table_ mais renvoie le résultat.
 
     t = {85, "texte", tostring(true)}
-    print(table.concat) --> 85textetrue
+    print(table.concat(t)) --> 85textetrue
 
 TODO: peut-être ajouter table.move
 
