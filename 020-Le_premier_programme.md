@@ -44,18 +44,16 @@ Ils sont souvent utilisés pour expliquer un bout de code sans avoir à le relir
 
 fonctionne de la même façon que la dernière fois même avec le commentaire.
 Ce n'est peut-être pas necessaire de mettre des commentaires sur chaque ligne, surtout quand on est habitué à print, mais c'était pour l'exemple.
-Il existe aussi des commentaires "_multilignes_" qui commencent par `--[[` et se terminent par `--]]`.
+Il existe aussi des commentaires "_multilignes_" qui commencent par `--[[` et se terminent par `]]`.
 
     print("Hello World!")
     --[[
     Affiche Hello World!
     En hommage au premier programme.
-    --]]
+    ]]
 
-On peut aussi ajouter un tiret au premier pour décommenter toute la partie qu'il commente, c'est utile pour remettre un code qu'on avait commenté.
+On ajoute aussi souvent deux tirets avant le `]]` à la fin pour pour pouvoir ajouter un tiret au premier, ce qui décommente toute la partie qu'il commentait, c'est utile pour remettre un code qu'on avait commenté.
 
     ---[[
     print("Cette partie n'est pas commentée !")
     --]]
-
-**NOTE:** Dans ce code les parties `---[[` et `--]]` ne font pas planter parce qu'elles sont commentées par les deux tirets.
